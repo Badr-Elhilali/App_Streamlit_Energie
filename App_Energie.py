@@ -7,10 +7,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 
-df=pd.read_csv("C:\\Users\\EL HILALI\\Desktop\\projet Energie\\data_fi_region.csv")
-prod_conso_jours=pd.read_csv('C:\\Users\\EL HILALI\\Desktop\\projet Energie\\prod_conso_jours.csv')
-data_meteo_prod_conso=pd.read_csv('C:\\Users\\EL HILALI\\Desktop\\projet Energie\\data_fi.csv')
-energie_clean_year=pd.read_csv('C:\\Users\\EL HILALI\\Desktop\\projet Energie\\energie_clean_year.csv', )
+df=pd.read_csv("data/data_fi_region.csv")
+prod_conso_jours=pd.read_csv('data/prod_conso_jours.csv')
+data_meteo_prod_conso=pd.read_csv('data/data_fi.csv')
+energie_clean_year=pd.read_csv('data/energie_clean_year.csv', )
 prod_conso_jours['date'] = pd.to_datetime(prod_conso_jours['date'], errors='coerce')
 
 # Configuration de la page Streamlit
@@ -452,7 +452,7 @@ elif page == pages[3]:
   from sklearn.linear_model import LinearRegression
 
   import joblib
-  df=pd.read_csv("C:\\Users\\EL HILALI\\Desktop\\projet Energie\\data_fi_region.csv")
+  df=pd.read_csv("data/data_fi_region.csv")
 
 # --- 📌 Charger les données ---
   df.drop('Unnamed: 0', axis=1, inplace=True)
