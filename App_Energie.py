@@ -36,7 +36,7 @@ st.sidebar.markdown("---")
 st.sidebar.write("")
 
 # Image et crédit
-st.sidebar.image('C:\\Users\\El HILALI\\Desktop\\projet Energie/image1.jpg', caption="Analyse énergétique basée sur les données de l'ODRE")
+st.sidebar.image('data/image1.jpg', caption="Analyse énergétique basée sur les données de l'ODRE")
 st.sidebar.write('Auteur : Badr El Hilali')
 
 if page == pages[0]:
