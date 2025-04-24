@@ -90,7 +90,7 @@ elif page == pages[1]:
  
   # Exploration des données
   st.subheader("Présentation finale des données")
-    
+  df = df.drop(columns=['Unnamed: 0'])   
   st.dataframe(df.head())
   st.write("Dimensions du dataframe :")
     
