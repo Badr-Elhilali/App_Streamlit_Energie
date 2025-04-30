@@ -480,7 +480,7 @@ elif page == pages[3]:
   X = df.drop(columns=['Consommation (MW)'])
   y= df['Consommation (MW)']
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-  rf_model = joblib.load("models/mmd")
+  rf_model = joblib.load("models/mmd.pkl")
   xgb_model = joblib.load("models/xgbo_model")
   lr_model = joblib.load("models/lr_model")
 
